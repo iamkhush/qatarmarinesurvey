@@ -106,77 +106,7 @@
 
                             <div id="system-message-container">
 </div>
-<form method="post" id="userForm" class="formResponsive" action="http://www.imssme.com/contact-us"><h2>Contact Us</h2>
 
-<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
-<fieldset class="formHorizontal formContainer" id="rsform_3_page_0">
-	<div class="rsform-block rsform-block-name">
-		<div class="formControlLabel">Name<strong class="formRequired">(*)</strong></div>
-		<div class="formControls">
-		<div class="formBody"><input type="text" value="" size="20" name="form[Name]" id="Name" class="rsform-input-box"><span class="formValidation"><span id="component23" class="formNoError">Invalid Input</span></span></div>
-		<p class="formDescription"></p>
-		</div>
-	</div>
-	<div class="rsform-block rsform-block-email">
-		<div class="formControlLabel">Email<strong class="formRequired">(*)</strong></div>
-		<div class="formControls">
-		<div class="formBody"><input type="text" value="" size="20" name="form[Email]" id="Email" class="rsform-input-box"><span class="formValidation"><span id="component24" class="formNoError">Invalid Input</span></span></div>
-		<p class="formDescription"></p>
-		</div>
-	</div>
-	<div class="rsform-block rsform-block-phone">
-		<div class="formControlLabel">Phone<strong class="formRequired">(*)</strong></div>
-		<div class="formControls">
-		<div class="formBody"><input type="text" value="" size="20" name="form[Phone]" id="Phone" class="rsform-input-box"><span class="formValidation"><span id="component25" class="formNoError">Invalid Input</span></span></div>
-		<p class="formDescription"></p>
-		</div>
-	</div>
-	<div class="rsform-block rsform-block-message">
-		<div class="formControlLabel">Message</div>
-		<div class="formControls">
-		<div class="formBody"><textarea cols="50" rows="5" name="form[Message]" id="Message" class="rsform-text-box"></textarea><span class="formValidation"><span id="component26" class="formNoError">Invalid Input</span></span></div>
-		<p class="formDescription"></p>
-		</div>
-	</div>
-	<div class="rsform-block rsform-block-submit">
-		<div class="formControlLabel"></div>
-		<div class="formControls">
-		<div class="formBody"><input type="submit" value="Submit" name="form[Submit]" id="Submit" class="rsform-submit-button"><span class="formValidation"></span></div>
-		<p class="formDescription"></p>
-		</div>
-	</div>
-</fieldset>
-<input type="hidden" name="form[formId]" value="3"></form><script type="text/javascript">ajaxExtraValidationScript[3] = function(task, formId, data) {var formComponents = {};formComponents[23]='Name';formComponents[24]='Email';formComponents[25]='Phone';formComponents[26]='Message';if (task == 'afterSend') {
-		var ids = data.response[0].split(',');
-		for (var i=0; i<ids.length; i++) {
-			var id = parseInt(ids[i]);
-			if (!isNaN(id) && typeof formComponents[id] != 'undefined') {
-				var formComponent = rsfp_getFieldsByName(formId, formComponents[id]);
-				if (formComponent && formComponent.length > 0) {
-					for (var j=0; j<formComponent.length; j++) {
-						if (formComponent[j]) {
-							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '');
-						}
-					}
-				}
-			}
-		}
-		var ids = data.response[1].split(',');
-		for (var i=0; i<ids.length; i++) {
-			var id = parseInt(ids[i]);
-			if (!isNaN(id) && typeof formComponents[id] != 'undefined') {
-				var formComponent = rsfp_getFieldsByName(formId, formComponents[id]);
-				if (formComponent && formComponent.length > 0) {
-					for (var j=0; j<formComponent.length; j++) {
-						if (formComponent[j]) {
-							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '') + ' rsform-error';
-						}
-					}
-				}
-			}
-		}
-		}
-}</script>
                         </main>
                         
                         
